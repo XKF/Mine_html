@@ -1,0 +1,372 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">  
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		百度前端任务二
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--CSS内部样式表-->
+<style>
+/*网格视图*/
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #DDDDDD;
+}
+/*导航栏样式*/
+	.header ul{
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		border:1px solid #262626;
+		background-color: #262626;
+
+	}
+	.header ul img{
+		float: left;
+		display: inline-block;
+		padding: 5px 0px 5px 30px; 
+		height: 60px;
+		width: 250px;
+	}
+	.header ul li{
+		float:right;
+		list-style-type: square;
+		list-style-position: inside;
+	}
+	.header ul li a{
+	color:white;
+	display: inline-block;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 25px 12px;
+	}
+	.header ul li a:hover{
+	color: rgb(137,137,137);
+	}
+/*板块样式*/
+.bankuai{
+	border-style: outset;
+	margin:20px 15px;
+	background-color: white;
+	padding: 20px 15px;
+	line-height: 30px;
+}
+/*图片模块样式*/
+.photo{
+	border: 1px solid ;
+	width: 180px;
+	padding: 5px 15px;
+	margin-left: 50px;
+}
+/*图片模块里图片样式*/
+.photo img{
+	width: 150px;
+	height: 150px;
+}
+p{
+	text-indent: 36px;
+	font-size: 18px;
+}
+h1{
+
+	font-size: 25px;
+}
+h1,h2,h3,p{
+	font-family: monospace;
+}
+h2,h3{
+	color: #6F6F6F;
+}
+th{
+	background-color: #333333;
+	color: white;
+}
+/*表格样式*/
+table {
+    border-collapse: collapse;
+}
+table,td,th{
+border:1px solid #B3B3B3;
+}
+/*表单样式*/
+form{
+	 width: 100%;
+	 font-size: 14px;
+	 text-align: center;
+}
+/*input标签样式*/
+label{
+	padding-right: 1px;
+	width: 797px;
+	height: 5px;
+	display: block;
+	font-size:14px;
+	color: black;
+    vertical-align: middle;
+    text-align: right;
+}
+
+form p{
+	font-size:14px;
+	color: #777777;
+
+}
+
+</style>
+</head>
+
+<body>
+<!--头部导航栏-->
+<div class="header">
+	<ul>
+		<img src="file:\\\E:\minegit\html_learning\Mine_html\images\5QUHRJ35GN2E.jpg" alt="专属图片">
+		<li>
+			<a href="http:\\www.youdao.com" target="_blank">导航链接四</a>
+		</li>
+		<li>
+			<a href="http:\\www.baidu.com" target="_blank">导航链接三</a>
+		</li>
+		<li>
+			<a href="http:\\www.sohu.com" target="_blank">导航链接二</a>
+		</li>
+		<li>
+			<a href="http:\\www.w3cschool.cn" target="_blank">导航链接一</a>
+		</li>
+	</ul>
+</div>
+
+<!--第一模块-->
+<div class="bankuai">
+	<h1>文章一级标题</h1>
+	<h2>文章二级标题</h2>
+	<h3>文章作者&nbsp;文章发表时间</h3>
+	<p>
+	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+	<br>
+	换行了
+	<br>
+	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+	<br>
+	这是一个很长很长的段落，这是一个很长很长的段落，
+	<a href="http://ife.baidu.com">
+		这里有一个链接链接到http://ife.baidu.com
+	</a>
+	这是一个很长很长的段落，这是一个很长很长的段落，
+	<b>
+		这里有个粗体字
+	</b>
+	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落.
+	</p>
+	<img src="file:\\\E:\minegit\html_learning\Mine_html\images\1.jpg" width="300" height="250" alt="四叶草">
+	<p>
+	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+	<br>
+	换行了
+	<br>
+	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+	<br>
+	这是一个很长很长的段落，这是一个很长很长的段落，
+	<a href="http://ife.baidu.com">
+		这里有一个链接链接到http://ife.baidu.com
+	</a>
+	这是一个很长很长的段落，这是一个很长很长的段落，
+	<b>
+		这里有个粗体字
+	</b>
+	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落.	
+	</p>
+</div>
+
+<!--第二模块-->
+<div class="bankuai">
+	<h1>另一篇文章一级标题</h1>
+	<h2>文章二级标题</h2>
+	<h3>文章作者&nbsp;文章发表时间</h3>
+	<p>
+	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+	<br>
+	换行了
+	<br>
+	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+	<br>
+	这是一个很长很长的段落，这是一个很长很长的段落，
+	<a href="http://ife.baidu.com">
+		这里有一个链接链接到http://ife.baidu.com
+	</a>
+	这是一个很长很长的段落，这是一个很长很长的段落，
+	<b>
+		这里有个粗体字
+	</b>
+	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落.	
+	</p>
+	<img src="file:\\\E:\minegit\html_learning\Mine_html\images\1.jpg" width="300" height="250" alt="四叶草">
+	<ul style="list-style-type: none;">
+		<li>
+		列表项目一
+		</li>
+		<li>
+		列表项目二	
+		</li>
+		<li>
+		列表项目三	
+		</li>
+	</ul>
+</div>
+
+<!--图片模块-->
+<div class="bankuai">
+	<h1>图片</h1>
+<div class="photo">
+		<p style="line-height: 5px">好看的图片</p>
+	<img src="file:\\\E:\minegit\html_learning\Mine_html\images\1.jpg" alt="四叶草">
+</div>
+<br>
+<div class="photo">
+		<p style="line-height: 5px">好看的图片</p>
+	<img src="file:\\\E:\minegit\html_learning\Mine_html\images\1.jpg" alt="四叶草">
+</div>
+<br>
+<div class="photo">
+		<p style="line-height: 5px">好看的图片</p>
+	<img src="file:\\\E:\minegit\html_learning\Mine_html\images\1.jpg" alt="四叶草">
+</div>
+<br>
+<div class="photo">
+		<p style="line-height: 5px">好看的图片</p>
+	<img src="file:\\\E:\minegit\html_learning\Mine_html\images\1.jpg" alt="四叶草">
+</div>
+<br>
+<div class="photo">
+		<p style="line-height: 5px">好看的图片</p>
+	<img src="file:\\\E:\minegit\html_learning\Mine_html\images\1.jpg" alt="四叶草">
+</div>
+<br>
+<div class="photo">
+		<p style="line-height: 5px">好看的图片</p>
+	<img src="file:\\\E:\minegit\html_learning\Mine_html\images\1.jpg" alt="四叶草">
+</div>
+<br>
+<div class="photo">
+		<p style="line-height: 5px">好看的图片</p>
+	<img src="file:\\\E:\minegit\html_learning\Mine_html\images\1.jpg" alt="四叶草">
+</div>
+<br>
+<div class="photo">
+		<p style="line-height: 5px">好看的图片</p>
+	<img src="file:\\\E:\minegit\html_learning\Mine_html\images\1.jpg" alt="四叶草">
+</div>
+<br>
+<div class="photo">
+		<p style="line-height: 5px">好看的图片</p>
+	<img src="file:\\\E:\minegit\html_learning\Mine_html\images\1.jpg" alt="四叶草">
+</div>
+<br>
+<div class="photo">
+		<p style="line-height: 5px">好看的图片</p>
+	<img src="file:\\\E:\minegit\html_learning\Mine_html\images\1.jpg" alt="四叶草">
+</div>
+<br>
+</div>
+
+<!--第四模块-->
+<div class="bankuai">
+	<h1>最后一篇文章一级标题</h1>
+	<h2>文章二级标题</h2>
+	<h3>文章作者&nbsp;文章发表时间</h3>
+	<ol>
+		<li>排名一</li>
+		<li>排名二</li>
+		<li>排名三</li>
+	</ol>
+	<p style="text-indent:0px">下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
+	<table style="width: 100%">
+	<tr style="text-align: left;">
+		<th width="40%">表头</th>
+		<th width="40%">表头</th>
+		<th width="20%">表头</th>
+	</tr>
+	<tr>
+		<td>表内容单元格</td>
+		<td>表内容单元格</td>
+		<td>操作</td>
+	</tr>
+		<tr>
+		<td>表内容单元格</td>
+		<td>表内容单元格</td>
+		<td>操作</td>
+	</tr>
+		<tr>
+		<td>表内容单元格</td>
+		<td>表内容单元格</td>
+		<td>操作</td>
+	</tr>
+		<tr>
+		<td>表内容单元格</td>
+		<td>表内容单元格</td>
+		<td>操作</td>
+	</tr>
+	<tr bgcolor="#B3B3B3">
+		<td>总计</td>
+		<td colspan="2">1000</td>
+	</tr>
+</table>
+</div>
+
+<!--第五模块，即侧栏模块-->
+<div class="bankuai">
+<h2 style="border-left: 3px solid #B3B3B3;padding: 8px;color: black">这里是以后是一个侧栏，这是侧栏的标题</h2>
+<!--表单-->
+<form  action="http://www.baidu.com" method="get" >
+
+<label>请输入邮箱地址</label><input type="text" value="这是一个文本输入框">
+
+<p>邮箱地址请按要求格式输入</p>
+
+<label>请输入密码</label>
+<input type="password" name="pwd">
+<br>
+
+<label>请重复输入密码</label>
+<input type="password" name="pwd">
+<p>密码请为6-16位英文数字</p>
+<br>
+
+<label>性别</label><input type="radio" name="radio" value="1" checked >男<input type="radio" name="radio" value="2">女
+<br>
+
+<label>城市</label>
+<select>
+<option value="1">北京</option>
+<option value="2">上海</option>
+<option value="3" selected>广州</option>
+</select>
+<br>
+
+<label>爱好</label>
+<input type="checkbox" name="checkbox" value="1">运动
+<input type="checkbox" name="checkbox" value="2">艺术
+<input type="checkbox" name="checkbox" value="3">科学
+<br>
+
+<label>个人描述</label>
+<textarea style="border: 1 overflow: auto; vertical-align: text-top; width:500px;height: 100px; margin-left: 350px">
+这是一个多行输入框，输入您的个人描述
+</textarea>
+<br>
+<br>
+
+<input type="submit" value="确认提交" style="background-color: blue; width:100%;height:50px;font-size: 20px">
+</form>
+</div>
+
+<!--尾部-->
+<div id="footer" style="background-color:#262626;clear:both;text-align:center;padding:25px;height: 70px;color: white;">
+Copyright © XieKaifan</div>
+
+</body>
+</html>
