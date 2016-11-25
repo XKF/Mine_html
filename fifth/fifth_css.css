@@ -1,0 +1,153 @@
+/*网格视图*/
+*{
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+    	content:".";
+     	display:block;
+    	height:0;
+     	clear:both;
+     	visibility:hidden;
+}
+		.clearfix{display:inline-block;}
+/* Hide from IE Mac */
+		.clearfix {display:block;}
+/* End hide from IE Mac */
+/* end of clearfix */
+
+body{
+	background-color: #DDDDDD;
+	margin: 0px;
+}
+/*导航栏样式*/
+	.header{
+		width: 100%;
+	}
+
+	.header ul{
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		border:1px solid #262626;
+		background-color: #262626;
+
+	}
+	.header ul img{
+		float: left;
+		display: inline-block;
+		padding: 5px 0px 5px 30px; 
+		height: 60px;
+		width: 250px;
+	}
+	.header ul li{
+		float:right;
+		list-style-type: square;
+		list-style-position: inside;
+	}
+	.header ul li a{
+	color:white;
+	display: inline-block;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 25px 12px;
+	}
+	.header ul li a:hover{
+	color: rgb(137,137,137);
+	}
+/*板块样式*/
+.bankuai{
+	border-style: outset;
+	width: auto;
+	margin:20px 20px;
+	margin-right: 640px;
+	background-color: white;
+	padding: 20px 15px;
+	line-height: 30px;
+}
+/*图片模块样式*/
+.photo{
+	border: 1px solid ;
+	width: auto;
+	height: auto;
+	padding: 5px 15px;
+	margin: 20px;
+	display: inline;
+	float: left;
+	vertical-align: top;
+}
+/*图片模块里图片样式*/
+.photo img{
+	width: 150px;
+	height: 150px;
+	
+}
+p{
+	text-indent: 36px;
+	font-size: 18px;
+}
+h1{
+
+	font-size: 25px;
+}
+h1,h2,h3,p{
+	font-family: monospace;
+}
+h2,h3{
+	color: #6F6F6F;
+}
+th{
+	background-color: #333333;
+	color: white;
+}
+/*表格样式*/
+table {
+    border-collapse: collapse;
+}
+table,td,th{
+border:1px solid #B3B3B3;
+}
+/*表单样式*/
+form{
+	 width: 100%;
+	 font-size: 14px;
+	 text-align: center;
+}
+/*input标签样式*/
+label{
+	padding-right: 380px;
+	height: 4px;
+	display: block;
+	font-size:14px;
+	color: black;
+    vertical-align: middle;
+    text-align: right;
+    position: relative;
+    top: 2px;
+}
+
+form p{
+	font-size:14px;
+	color: #777777;
+
+}
+
+#footer{
+background-color:#262626;
+clear:both;
+text-align:center;
+padding:25px;
+height: 70px;
+color: white;
+width: 100%;
+}
+textarea{
+	border: 1; 
+	overflow: auto; 
+	vertical-align: text-top; 
+	height: 100px; 
+	position: relative;
+	left: 10px;
+}
