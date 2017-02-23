@@ -1,0 +1,271 @@
+body{
+	width: 100%;
+	margin: 0;
+	background-color: #eeeeed;
+}
+header{
+height: 58px;
+width: 100%;
+background-color: #2189bf;
+}
+
+header img{
+	float: left;
+	margin-left: 2.9%;
+	width: 36px;
+	height: 36px;
+	padding: 11px 0;
+}
+
+header a{
+	text-decoration: none;
+	color: white;
+}
+
+header a:hover{
+	color: #611602;
+}
+
+header form{
+    width: 24.45%;
+	height: 25px;
+	border-radius: 15px;
+	border-style: none;
+	margin-top: 16.5px;
+	margin-bottom: 16.5px;
+	margin-right: 1%;
+	float: right;
+	background-image: url(image/search.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-color: white;
+}
+
+@media screen and  (max-width: 760px){
+header form{
+	margin-right: 12%;
+}
+}
+
+@media screen and  (max-width: 500px){
+	header form{
+	display: none;
+	}
+}
+
+input[type="search"]{
+	margin-left: 30px;
+	border: none;
+	border-radius: 15px;
+	height: 100%;
+	margin-right: 10%;
+	outline: none;
+}
+
+
+header ul{
+	list-style: none;
+	float: right;
+	margin-top: 20px;
+	margin-right: 5%;
+	padding: 0;
+}
+
+header ul li{
+	color: white;
+	background-image: url(image/denglu.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 0px; 
+	padding-left: 14px; 
+	font-family:"黑体";
+	font-size: 1em;
+	padding-bottom: 1em: 
+}
+
+div#left{
+	height: 1210px;
+	width: 20.31%;
+	background-color: #2a2e3d;
+	float: left;
+}
+
+div#tx{
+	display: inline-block;
+	width: 78px;
+	height: 78px;
+	border:2px solid #b9babd;
+	border-radius: 39px;
+	box-shadow: 0 0 0 4px #2a2e3d inset;
+	background-color: #b9babd;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+p#name{
+	float: right;
+	margin: 0;
+	margin-top: 58px;
+	margin-right: 42%;
+	color: #e2e2e2;
+	font-size: 1.3em;
+	font-family:"黑体";
+}
+
+div#lpart2{
+	margin-left: 8%;
+}
+
+div.inline{
+	display: inline-block;
+	margin: 8% 10%;
+}
+p.both{
+	color: #6a7c90;
+	font-size: 1.3em;
+	font-family:"黑体";
+	margin: 0;
+	text-align: center;
+}
+div#border1{
+	display: inline-block;
+	height: 2.6em;
+	border-right: 1px solid #6a7c90;
+}
+
+div>ul{
+padding-left: 0;
+margin: 0;
+}
+
+div>ul>li{
+	color: #6e8096;
+	font-family:"黑体";
+	font-size: 1.2em;
+	line-height: 3.5em;
+	list-style-position: inside;
+	padding-left: 13%;
+}
+
+li#folder{
+	list-style-image: url(image/folder.gif);
+	background: #383d4e;
+	line-height: 2em;
+}
+
+li.folder2{
+	list-style-image: url(image/folder2.gif);
+	color:#6e8096;
+}
+li#folder3{
+	list-style-image: url(image/folder3.gif);
+}
+li.doc{
+	list-style-image: url(image/doc.gif);
+	color:#6e8096;
+}
+li.white{
+	color: #ededf0;
+}
+li.star{
+	list-style-image: url(image/star.gif);
+}
+li#member{
+	list-style-image: url(image/member.gif);
+}
+li#folder4{
+	list-style-image: url(image/folder4.gif);
+}
+
+
+@media screen and (max-width: 1740px){
+div#tx{
+	margin-left: 80px;
+}
+p#name{
+	display: none;
+}
+}
+
+
+@media screen and (max-width: 1000px){
+div#tx{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: #b9babd;
+	margin-top: 15px;
+	margin-left: 25px;
+}
+p#name{
+	display: none;
+}
+
+div#border1{
+display: none;
+}
+
+p.both{
+	color: #6a7c90;
+	font-size: 1em;
+	font-family:"黑体";
+	text-align: center;
+}
+
+div ul{
+padding-left: 0;
+}
+
+div>ul>li{
+	color: #6e8096;
+	font-family:"黑体";
+	font-size: 0.8em;
+	line-height: 2em;
+	list-style-position: inside;
+	padding-left: 13%;
+}
+
+li#folder{
+	list-style-image: url(image/folder.gif);
+	background: #383d4e;
+}
+
+li.folder2{
+	list-style-image: url(image/folder2.gif);
+	color:#6e8096;
+}
+li#folder3{
+	list-style-image: url(image/folder3.gif);
+}
+li.doc{
+	list-style-image: url(image/doc.gif);
+	color:#6e8096;
+}
+li.white{
+	color: #ededf0;
+}
+li.star{
+	list-style-image: url(image/star.gif);
+}
+li#member{
+	list-style-image: url(image/member.gif);
+}
+li#folder4{
+	list-style-image: url(image/folder4.gif);
+}	
+}
+div#road{
+	height: 30px;
+	width: 79.69%;
+	background-color: white;
+	float: left;
+}
+div#road p{
+	margin: 0;
+	font-family: "黑体";
+	padding:5px 30px;
+	color: #b7b7b7;
+}
+
+div#road span{
+	color: #6898c2;
+}
