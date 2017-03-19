@@ -1,0 +1,63 @@
+/*屏幕小于640px时的样式
+
+四个板块排序为4-1-2-3
+
+-上对齐-
+
+*/
+body{
+	margin: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+div{
+	width: 150px;
+	box-sizing: border-box;
+	border:2px solid red;
+	margin: 20px;
+	text-align: center;
+}
+#one{
+height: 120px;
+order: 2;
+}
+#two{
+	height: 100px;
+	order: 3;
+}
+#three{
+	height: 40px;
+	order: 4;
+}
+#four{
+	height: 200px;
+	border-color: blue;
+	order: 1;
+}
+
+/*屏幕大于640px时的样式
+
+四个板块排序为1-2-3-4
+
+-居中对齐-
+
+*/
+@media screen and (min-width: 640px) {
+body{
+	align-items: center;
+}
+#one{
+	order: 1;
+}
+#two{
+	order: 2;
+}
+#three{
+	order: 3;
+}
+#four{
+	order: 4;
+}
+}
