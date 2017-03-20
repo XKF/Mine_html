@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>百度前端任务十四</title>
+  </head>
+<body>
+
+  <h3>空气质量城市列表</h3>
+  <ul id="aqi-list">
+<!--   
+    <li>第一名：福州（样例），10</li>
+  	<li>第二名：福州（样例），10</li> -->
+  </ul>
+
+<script type="text/javascript">
+var newData=new Array();
+var aqiData = [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100]
+];
+/*显示最初的城市列表*/
+
+(function(){
+for(var i=0;i<aqiData.length;i++){
+ var li=document.createElement("li");
+  var text=document.createTextNode(aqiData[i].join());
+  li.appendChild(text);
+  document.getElementById("aqi-list").appendChild(li); 
+}
+})();
+/*把空气良好城市赋值给一新数组*/
+(function () {
+
+  /*
+  在注释下方编写代码
+  遍历读取aqiData中各个城市的数据
+  将空气质量指数大于60的城市显示到aqi-list的列表中
+  */
+
+for(var i=0,j=0;i<aqiData.length;i++){
+  if(aqiData[i][1]>=60)
+  {
+    newData[j++]=aqiData[i];
+  }
+}
+
+/*对空气质量进行排序*/
+newData.sort(function(x, y){
+  return y[1] - x[1];
+});
+
+/*构建下方的列表---- h3 + ul   */
+var h3=document.createElement("h3");
+var h3_text=document.createTextNode("空气质量良好城市列表");
+var ul=document.createElement("ul");
+ul.setAttribute("id","newUl");
+h3.appendChild(h3_text);
+document.body.appendChild(h3);
+document.body.appendChild(ul);
+for(var i=0;i<newData.length;i++){
+  console.log(newData[i][0]);
+  var li=document.createElement("li");
+  var text=document.createTextNode(newData[i].join());
+  li.appendChild(text);
+  document.getElementById("newUl").appendChild(li);
+}
+})();
+
+</script>
+</body>
+</html>
