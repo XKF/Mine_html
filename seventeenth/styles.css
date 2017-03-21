@@ -1,0 +1,13 @@
+div#aqi-chart-wrap{
+	margin:0 auto;
+	margin-top: 80px;
+	border: 2px solid black;
+	background-color: #FEFEEB;
+	width: 1400px;
+	text-align: center;
+}
+div#aqi-chart-wrap div{
+	display: inline-block;
+	opacity: 0.8;
+	margin: 0 2px;
+}
