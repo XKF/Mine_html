@@ -14,8 +14,8 @@ var aqiData = {};
  * 然后渲染aqi-list列表，增加新增的数据
  */
 function addAqiData() {
-	var key=document.getElementById("aqi-city-input").value;
-	var keynum=document.getElementById("aqi-value-input").value;
+	var key=document.getElementById("aqi-city-input").value.trim();
+	var keynum=document.getElementById("aqi-value-input").value.trim();
 aqiData[key]=keynum;
 }
 
@@ -24,7 +24,7 @@ aqiData[key]=keynum;
  */
 function renderAqiList() {
 var tr=document.createElement("tr");
-tr.innerHTML="<td>"+document.getElementById("aqi-city-input").value+"</td><td>"+document.getElementById("aqi-value-input").value+"</td><td><button>删除</button></td>";
+tr.innerHTML="<td>"+document.getElementById("aqi-city-input").value.trim()+"</td><td>"+document.getElementById("aqi-value-input").value.trim()+"</td><td><button>删除</button></td>";
 document.getElementById("aqi-table").appendChild(tr);
 }
 
