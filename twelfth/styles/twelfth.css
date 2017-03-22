@@ -51,7 +51,7 @@ div#showpic{
    
 	-webkit-animation:change 15s infinite linear;  
    
-	-0-animation:change 15s infinite linear;  
+	-o-animation:change 15s infinite linear;  
    
 	-moz-animation:change 15s infinite linear;  
 }
