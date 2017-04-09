@@ -1,0 +1,54 @@
+body{
+	font-family: "黑体",sans-serif; 
+}
+div{
+	font-family: Arial,sans-serif;
+	font-size: 1.2em;
+}
+div#container{
+	width: 500px;
+	height: 500px;
+	padding-left: 20px;
+}
+label.tag1{
+	display: inline-block;
+	padding: 5px;
+	margin-top: 8px;
+	margin-right: 5px;
+	background-color:#5EB9FF;
+	color:white;
+	font-size:1em;
+}
+label.tag2{
+	display: inline-block;
+	padding: 5px;
+	margin-top: 8px;
+	margin-right: 5px;
+	margin-bottom: 8px;
+	background-color:orange;
+	color:white;
+	font-size:1em;
+}
+label.tag1:hover{
+	background-color: red;
+}
+input[type=text]{
+	width: 200px;
+	height: 20px;
+}
+input[type=button]{
+	background-color: white;
+	border-radius: 5px;
+	border-width: 1px;
+	height: 30px;
+	font-size: 0.8em;
+}
+textarea{
+	margin-top: 20px;
+	width: 253px;
+	height: 200px;
+}
+input[type=text]:focus{
+  border-width: 2px;
+  border-color: #5AB0FE;
+}
