@@ -45,7 +45,7 @@ function add1(){
 	newTag.onmouseover=function(){
 	newTag.innerHTML="点击删除 "+newTag.innerHTML;
 	newTag.onclick=function(){
-		newTag.remove();
+		this.parentNode.removeChild(this);
 	}
 	}
 	//鼠标移开时复原
@@ -78,7 +78,7 @@ function add2(){
 	if(bj==0){
 	//标签数超过10个时删除开头标签
 	if(l.length==10){
-		l[0].remove();
+		l[0].parentNode.remove(l[0]);
 	}
 	var newTag=document.createElement("label");
 	newTag.innerHTML=tl[j];
