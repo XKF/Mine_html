@@ -1,0 +1,27 @@
+input[type=button]{
+	background-color: white;
+	border-width: 1px;
+	border-radius: 5px;
+	font-family: "黑体";
+}
+div{
+	margin: 10px 0;
+}
+div#label{
+	margin-top: 100px;
+	height: 120px;
+	position: relative;
+}
+label{
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
+	float: left;
+	width: 20px;
+	padding: 5px;
+	margin-left: 5px;
+	font-family: "黑体";
+	background-color: red;
+	color: white;
+	font-size: 0;
+}
