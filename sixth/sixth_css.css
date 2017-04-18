@@ -298,6 +298,7 @@ div.finally{
 
 div.ul{
 margin-right: 20px;
+width: 439px;
 }
 
 .finally ul{
@@ -310,7 +311,7 @@ margin-right: 20px;
 .finally li{
 	font:normal 16px "宋体";
 	text-align: left;
-	padding: 20px;
+	padding: 20px 20px 20px 0;
 	color: #5a5b5b;
 }
 span.finally_span1{
@@ -323,8 +324,10 @@ div.redpart{
 	width: 260px;
 	height: 160px;
 	background-color: #FF5555;
-	margin-left: 0px;
-	margin-bottom: 0px; 
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	box-sizing: border-box;
 }
 
 span.redpart_span1{
@@ -348,29 +351,28 @@ p.redpart_p1{
 
 .finally h1{
 	font:italic 21px "黑体";
-	color: #ffffff;
-	padding-top: 24px;
-	float: right;
-	margin-right: 18px;
+	color: white;
+	position: absolute;
+	bottom: 58px;
+	left: 88px;
 }
 
 .finally h2{
 	font:normal 12px "黑体";
 	color: #ffffff;
-	padding-top: 6px;
-	float: right;
-	margin-right: 25px;
 	text-decoration: none;
-	position: relative;
-	top: -73px;
+	position: absolute;
+	bottom: 35px;
+	left: 91px;
 }
 
 div.r_redpart{
 	width: 170px;
 	float: right;
 	margin-right: 20px;
-	position: relative;
-	top: -265px;
+	position: absolute;
+	bottom:-60px;
+	right: 0;
 }
 p.redpart_p2{
 	font:italic 14px "黑体";
