@@ -1,0 +1,50 @@
+body{
+	text-align: center;
+	background-color: #A6F089;
+	font-family: "黑体";
+}
+textarea{
+	margin: auto;
+	margin-top: 300px;
+	width: 300px;
+	height: 150px;
+	display: block;
+}
+label{
+	font-weight: bold;
+}
+input[type=text]{
+	margin-top: 20px;
+}
+input[type=button]{
+	background-color: white;
+	border-width: 1px;
+	border-radius: 10px;
+	width: 50px;
+	height: 25px;
+}
+input[name=add]{
+	width: 150px;
+	margin-top: 5px;
+}
+input[name=empty]{
+	width: 150px;
+	margin-top: 5px;
+}
+div#bottom{
+	margin: auto;
+	width: 300px;
+	height: 200px;
+	background-color: white;
+	margin-top: 20px;
+	text-align: left;
+}
+p{
+	margin: 0 5px 0 0;
+	padding: 2px;
+	display: inline-block;
+}
+p.BJ{
+	color: red;
+	font-weight: bold;
+}
