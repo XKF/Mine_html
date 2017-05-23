@@ -1,0 +1,108 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 1;
+}
+div#first{
+	width: 96%;
+	border:3px solid black;
+	height: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 1;
+	background-color: white;
+}
+div.second{
+	height: 80%;
+	width: 48%;
+	border:3px solid black;
+	display: flex;
+	margin:5px;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 1;
+	background-color: white;
+}
+div.third{
+	height: 80%;
+	width: 46%;
+	border:3px solid black;
+	display: flex;
+	margin:5px;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 1;
+	background-color: white;
+}
+div.fourth{
+	height: 60%;
+	width: 42%;
+	border:3px solid black;
+	display: flex;
+	margin:5px;
+	flex-shrink: 1;
+	background-color: white;
+}
+header{
+	width: 100%;
+	height: 55px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: gray;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+input[type=button]{
+	width: 60px;
+	height: 30px;
+	margin: 10px;
+}
+
+
+/*颜色变化*/
+@keyframes changecolor{
+  0%{
+   background: white;
+  }
+  50%{
+   background: blue;
+  }
+  100%{
+    background: white;
+  }
+}
+/*动画类*/
+.c_color{
+	animation:changecolor 2s linear;
+}
+footer{
+	height: 45px;
+	background-color: #4A4949;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h1{
+	position: absolute;
+	top: 55px;
+	width: 200px;
+	text-align: center;
+	left:calc(50% - 4.5em);
+	font-size: 1.5em;
+}
