@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>音乐区</title>
+	<link rel="stylesheet" type="text/css" href="styles/music.css">
+	<script type="text/javascript" src="jquery/jquery-3.0.0/jquery-3.0.0.js"></script>
+	<script type="text/javascript" src="jquery/layer-v3.0.3/layer/layer.js"></script>
+	<script type="text/javascript" src="js/music.js"></script>
+	<script type="text/javascript">  
+            window.onload = function() {  
+                var obj1 = createDraggableObject();  
+                obj1.init(get('main'));  
+                sao();
+                time();
+                music();
+                KF();
+            }
+            $(document).ready(function(){ 
+			$(".undo").on('click',function(){
+    			layer.msg('抱歉，该功能暂未开发！', {icon: 5});return false;
+});
+});
+    </script>  
+</head>
+<body>
+	<img src="images/musicBg.jpg" id="bg">
+	<div id="main"><div id="zero">◇ ◇<br>—</div><div id="one"><a href="index.html"><img src="images/home.png" class="mainImg"></a></div><div id="two"><a href="#" class="undo"><img src="images/sz.png" class="mainImg"></a></div><div id="three"><a href="page.html"><img src="images/kf.png" class="mainImg" style="margin-left: -14px;margin-top: -15px;"></a></div><div id="four"><a href="#" id="kf"><img src="images/help.png" class="mainImg"></a></div></div>
+	<input type="text" name="time" id="time">
+	<div id="musicplayer"><img src="images/musicplayer.png" id="player"><audio src="music/Continued Story.mp3" controls id="audio1"></audio></div>
+<form id="form1" enctype="multipart/form-data" method="post" action="upload.php">
+<div class="row" style="display: flex;justify-content: flex-start;margin-bottom: 5px;">
+<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelected();" accept="audio/*"/>
+</div>
+<div id="progressNumber"><input type="button" onclick="uploadFile()" value="上传文件"  /><meter id="JDT" value="0" min="0" max="100" style="width: 40%;margin-left: 5px;"></meter></div>
+<div id="fileName"></div>
+<div id="fileSize"></div>
+<div id="fileType"></div>
+</form>
+ <footer>
+		Copyright © FanJiang の Coffee
+</footer>
+</body>
+</html>

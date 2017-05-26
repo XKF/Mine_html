@@ -1,0 +1,72 @@
+@import url('http://cdn.webfont.youziku.com/webfonts/nomal/101786/45824/58fddeaff629d80b38fad375.css');
+html{
+	width: 100%;
+	height: 100%
+}
+body{
+	background-color: #F0E7A9;
+	text-align: center;
+}
+h1{
+	font-family: 'DroidSansa44d724bf18d9a',"黑体",sans-serif;
+	font-size: 4em;
+	color: #884602;
+}
+article{
+width: 80%;
+height: 600px;
+border: 5px solid white;
+margin: auto;
+border-radius: 30px;
+background-image: url(../images/bg3.jpg);
+box-sizing: border-box;
+padding: 50px;
+position: relative;
+z-index: 9999;
+}
+p{
+	color: #FFFE97;
+	font-family: "黑体";
+	font-size: 1.2em;
+}
+img{
+	position: absolute;
+	top: 15px;
+	left: 30px;
+}
+ul#menu{
+	position: absolute;
+	top: 160px;
+	left:25px;
+	border: 0;
+	background-color: #F0E7A9;
+	font-family: "黑体";
+	z-index: -9999;
+	opacity: 0.95;
+}
+ul#menu ul{
+	background-color: #F0E7A9;
+}
+ul#menu a{
+	text-decoration: none;
+}
+ul#menu li{
+	padding: 8px 0;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	display: none;
+}
+ul#menu>li{
+	border-top: none !important;
+}
+footer{
+	background-color:#262626;
+	text-align:center;
+	box-sizing: border-box;
+	width: 100%;
+	padding:25px;
+	color: white;
+	margin-top: 20px;
+	clear: both;
+	position: absolute;
+	bottom: 0;
+}

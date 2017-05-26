@@ -1,0 +1,122 @@
+@import url('http://cdn.webfont.youziku.com/webfonts/nomal/101786/45824/58fdf82af629d80b38fad38b.css');
+body{
+  text-align: center;
+  background-color: #F0E7A9;
+}
+h1#head{
+  font-family: 'DroidSansa453aaf8918d9a','黑体';
+  color: grey;
+  font-size: 3em;
+}
+@keyframes around{
+  0% {
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+img{
+  -webkit-animation-name:around;
+  -moz-animation-name:around;
+  animation-name:around;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0.1s;
+  animation-iteration-count:infinite;
+ margin: auto;
+ z-index: 10;
+ width: 15%;
+ height: 15%;
+}
+article{
+  border: 3px solid #884602;
+  border-radius: 40px;
+  padding:10px;
+  width: 400px;
+  height: 200px;
+  box-sizing: border-box; 
+}
+article h1{
+  margin: 0;
+  font-family: '黑体';
+}
+#a1{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background-image: url(../images/page2-1.jpg);
+  color: black;
+  z-index: -1;
+}
+#a2{
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  background-image: url(../images/page2-2.jpg);
+  color: white;
+  z-index: -1;
+}
+#a3{
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  background-image: url(../images/page2-3.jpg);
+  color: grey;
+  z-index: -1;
+}
+#a4{
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  background-image: url(../images/page2-4.jpg);
+  color: orange;
+  z-index: -1;
+}
+p{
+  font-family: "黑体";
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+  text-align: left !important;
+  line-height: 1.5em;
+  margin-top: 5px;
+  text-indent: 2em;
+}
+#a2 p{
+  color: white;
+}
+#a3 p{
+  color: grey;
+}
+#a4 p{
+  color: orange;
+}
+#time{
+  background-color: blue;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  height: 35px;
+  text-align: right;
+  font-size: 2em;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+#bt{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+#dl{
+  position: absolute;
+  top: 10px;
+ left: 120px;
+  width: 100px;
+  height: 30px;
+   border-radius: 10px;
+}

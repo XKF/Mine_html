@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>饭酱休闲咖啡馆</title>
+	<link rel="stylesheet" type="text/css" href="styles/coffee.css">
+	<script type="text/javascript" src="jquery/jquery-3.0.0/jquery-3.0.0.js"></script>
+	<script type="text/javascript" src="js/coffee.js"></script>
+	<script type="text/javascript" src="jquery/layer-v3.0.3/layer/layer.js"></script>
+</head>
+<body>
+	<div id="tm"></div>
+	<header>
+		<nav>
+			<ul id="nav-left">≡ 选项
+			<a href="" class="undo"><li id="first">设置</li></a>
+			<a href="page.html"><li>社区</li></a>
+			<a href="#" id="kf"><li>客服</li></a>
+			<a href="" class="undo"><li>关于</li></a>
+			</ul>
+		<form action="http://www.baidu.com/s" id="form1" target="_blank">
+		<input type="text" name="wd" id="search"> 
+		</form>	
+		<ul id="nav-right">
+			<a href="" id="activity" ><li>@活动</li></a>
+			<a href="" id="dd"><li>$订单</li></a>
+			<a href="" id="dl"><li>Ω注销</li></a>
+		</ul>		
+		</nav>
+		<div id="zc">
+			<form id="form2" name="form2">
+				<table>
+					<caption>会 员 登 录</caption>
+					<tr><td style="word-spacing: 1.5em">昵 称</td><td><input type="text" name="username" id="username" required="required"></td></tr>
+					<tr><td style="word-spacing: 1.5em">密 码</td><td><input type="password" name="password" id="password" required="required"></td></tr>			
+					<tr height="15px"><td> </td></tr>
+					<tr><td><a href="zc.html" target="_blank"><input type="button" name="注册" value="注 册" id="submit"></a></td><td><input type="submit" name="登录" value="登 录"></td></tr>
+				</table>
+			</form>
+		</div>
+	</header>
+	<div id="middle">
+		<p>Coffee<span id="intro">用心做好您的每一杯咖啡</span></p>
+		<p id="intro2">香醇丝滑 浓香提神  细腻回味 奶香诱人 独特风味</p>
+	</div>
+	<div id="showPic">
+		<img src="images/nat.jpg" id="img-right" title="丝滑拿铁" alt="丝滑拿铁">
+		<img src="images/jtmqd.jpg" title="焦糖玛奇朵" alt="焦糖玛奇朵">
+		<img src="images/xlkf.jpg" id="img-left" title="印度香辣咖啡" alt="印度香辣咖啡">
+	</div>
+	<img src="images/shopcar.jpg" id="shopcar" alt="购物车">
+	<div id="menu">
+		<h1>饮 品 菜 单</h1>
+		<div id="sj1"></div>
+		<div id="sj2"></div>
+	</div>
+	<div id="showMenu">
+	<form id="form3">
+		<table>
+			<caption>☆ 饭 酱 咖 啡 欢 迎 您 ☆</caption>
+			<tr>
+			<td><img src="images/t1.jpg"></td>
+			<td>拿铁咖啡<br>$30 </td><td><b>&nbsp;数量</b> x <input type="text" name="拿铁咖啡" id="c1" price="30"></td>
+			<td class="mar"><img src="images/t2.jpg"></td>
+			<td>黑咖啡<br>$40 </td><td><b>&nbsp;数量</b> x <input type="text" name="黑咖啡" id="c2" price="40"></td>
+			</tr>
+			<tr>
+			<td><img src="images/t3.jpg"></td>
+			<td>焦糖玛奇朵<br>$35 </td><td><b>&nbsp;数量</b> x <input type="text" name="焦糖玛奇朵" id="c3" price="35"></td>
+			<td class="mar" ><img src="images/t4.jpg"></td>
+			<td>摩卡咖啡<br>$35 </td><td><b>&nbsp;数量</b> x <input type="text" name="摩卡咖啡" id="c4" price="35"></td></tr>
+			<tr>
+			<td><img src="images/t5.jpg"></td>
+			<td>卡布奇诺<br>$50 </td><td><b>&nbsp;数量</b> x <input type="text" name="卡布奇诺" id="c5" price="50"></td>
+			<td class="mar" ><img src="images/t6.jpg"></td>
+			<td>香浓奶咖<br>$30 </td><td><b>&nbsp;数量</b> x <input type="text" name="香浓奶咖" id="c6" price="30"></td>
+			</tr>
+			<tr>
+			<td><img src="images/t7.jpg"></td>
+			<td>浓香可可<br>$25 </td><td><b>&nbsp;数量</b> x <input type="text" name="浓香可可" id="c7" price="25"></td>
+			<td class="mar" ><img src="images/t8.jpg"></td>
+			<td>冰咖啡<br>$40 </td><td><b>&nbsp;数量</b> x <input type="text" name="冰咖啡" id="c8" price="40"></td>
+			</tr>
+		</table>
+		<input type="button" name="立马下单" value="立马下单" id="buy">
+		</form>
+		<img src="images/meituan.jpg" id="wm">
+	</div>
+		<div id="showPhoto">
+		<div id="change">
+		<a href="images/p1.jpg" target="_blank"><img src="images/p1.jpg" alt="享受咖啡图片1" id="p1"></a>
+		<a href="images/p2.jpg" target="_blank"><img src="images/p2.jpg" alt="享受咖啡图片2" id="p2"></a>
+		<a href="images/p3.jpg" target="_blank"><img src="images/p3.jpg" alt="享受咖啡图片3" id="p3"></a>
+		</div>
+		<ul>
+			<li id="list1"></li>
+			<li id="list2"></li>
+			<li id="list3"></li>
+		</ul>
+	</div>
+	<div id="wenben">
+		<p>您</p>
+		<p>的 每</p>
+		<p>一 次</p>
+		<p>微 笑</p>
+		<p>都 是</p>
+		<p>对 我</p>
+		<p>们 的</p>
+		<p>肯 定</p>
+		<p>&nbsp; !</p>
+	</div>
+	<footer>
+		Copyright © FanJiang の Coffee
+	</footer>
+</body>
+</html>

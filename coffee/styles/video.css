@@ -1,0 +1,288 @@
+@import url('http://cdn.webfont.youziku.com/webfonts/nomal/101786/47299/59088329f629d80ea043f5f7.css');
+@import url('http://cdn.webfont.youziku.com/webfonts/nomal/101786/45824/59088a17f629d80ea043f5f8.css');
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	margin:0;
+	background-color: #636363;
+}
+header{
+	width: 100%;
+	height: 480px;
+	position: relative;
+}
+header video{
+	height: 100%;
+	width: 100%;
+	object-fit:fill;
+}
+nav{
+	height: 80px;
+	width: 100%;
+	color: white;
+	position: absolute;
+	background-color: black;
+	opacity: 0.6;
+	top: 0;
+	z-index: 10;
+}
+ul#nav-left{
+	position: absolute;
+	margin: 0;
+	color: white;
+	top: 30px;
+	left: 40px;
+	font-family: "黑体",sans-serif;
+	font-size:1.2em;
+}
+ul#nav-left li{
+	display: none;
+	padding:5px 0 5px 30px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	list-style: none;
+}
+li#first{
+	border-top: none;
+	margin-top: 5px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+ul#nav-left:hover{
+	color: grey;
+}
+a:hover{
+	color: yellow;
+}
+ul#nav-right{
+	position: absolute;
+	z-index: 10;
+	margin: 0 20px 0 0;
+	color: white;
+	top: 30px;
+	right: 0;
+	font-family: "黑体",sans-serif;
+	font-size:1.2em;
+	box-sizing: border-box;
+}
+ul#nav-right li{
+	list-style: none;
+	padding: 0 10px;
+	display: inline;
+	box-sizing: border-box;
+	-webkit-transition: font-size .1s ease 0s;
+	-moz-transition: font-size .1s ease 0s;
+ 	 transition: font-size .1s ease 0s;
+}
+ul#nav-right li:hover{ 
+   font-size: 1.2em; 
+}
+header h1{
+	position: absolute;
+	top: 15%;
+	right: 10%;
+	font-family:'REEJI-Sun-Blacka6e69a18e18d9a',sans-serif;
+	color: #E2E0E0;
+	font-size: 7em;
+	word-spacing: -0.2em;
+	font-style: italic;
+}
+header p{
+	position: absolute;
+	color: #E2E0E0;
+	font-family:'DroidSansa6e84b4b518d9a';
+	right: 20%;
+	top: 60%;
+	font-size: 1.5em;
+	font-style: italic;
+}
+div#show{
+	background-color: white;
+	width: 90%;
+	height: 300px;
+	margin:5px auto 0;
+	position: relative;
+	overflow: hidden;
+}
+div#container{
+	background-color: transparent;
+	width: 200%;
+	height: 100%;
+	position: absolute;
+	transition-property: left;
+  	-webkit-transition-duration:.8s;
+  	transition-duration:.8s;
+  	-webkit-transition-timing-function: ease-out;
+ 	transition-timing-function: ease-out;
+}
+input[type=button]{
+position: absolute;
+height: 130px;
+width: 60px;
+background-color: black;
+opacity: 0.5;
+border: 0;
+color: white;
+font-size: 3em;
+z-index: 5;
+}
+input[type=button]:hover{
+	opacity: 0.8;
+}
+#b1{
+	left: 0;
+	top:85px;
+}
+#b2{
+	right: 0;
+	top: 85px;
+}
+div.part{
+	display: inline-block;
+	width: 12.5%;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+div.frontBg{
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}
+div.inBg{
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}
+div.part img{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+.play{
+	height: 50px !important;
+	width: 50px !important;
+	left: calc(50% - 25px);
+	top:calc(50% - 25px);
+	position: absolute;
+	z-index: 3 !important;
+	opacity: 1;
+	display: none;
+}
+#videoMK{
+	width: 45%;
+	height: 470px;
+	margin-left: 5%;
+	margin-top: 2px;
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+#showPlayer{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 2;
+}
+#videoFrontBg{
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 z-index: 3;
+	 background-color: black;
+	 opacity: 0.3;
+	 display: block;
+}
+#tabs{
+	width: 45%;
+	height: 470px;
+	display: inline-block;
+	float: left;
+	background-image: url(../images/bg8.jpg);
+	box-sizing: border-box;
+}
+#tabs ul{
+	background-color: transparent;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+#tabs ul li{
+	float: right;
+}
+#tabs ul a{
+	background-color: transparent;
+}
+ol{
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+}
+ol li{
+	font-family: "黑体";
+	font-size: 1.1em;
+	padding: 0 10px 20px;
+}
+ol li a:hover,#mk h2 a:hover{
+	color: purple !important;
+}
+ol li span{
+	position: absolute;
+	right: 0;
+}
+#mk{
+	width: 90%;
+	height: 400px;
+	clear: both;
+	margin: auto;
+	position: relative;
+}
+#mk h2{
+	margin: 0;
+	padding: 5px 10px;
+	border-left: 4px solid #01FD1A;
+	color: white;
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+.jc{
+	width: 15%;
+	height: 300px;
+	display: inline-block;
+	float: left;
+	margin-left: 1.4%;
+	margin-top: 75px;
+	background-color:white;
+	text-align: center;
+}
+.jc img{
+	width: 100%;
+	height: 260px;
+	margin-top: 0;
+}
+div.jc p{
+	margin-top: 8px;
+	font-family: "黑体" !important;
+}
+footer{
+	background-color:#262626;
+	text-align:center;
+	box-sizing: border-box;
+	width: 100%;
+	padding:25px;
+	color: white;
+	margin-top: 20px;
+	clear: both;
+	bottom: 0;
+}

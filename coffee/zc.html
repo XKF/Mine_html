@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册页面</title>
+	<link rel="stylesheet" href="styles/zc.css">
+	<script type="text/javascript" src="js/zc.js"></script>
+</head>
+<body>
+<header>
+	<ul>
+		<li><a href="index.html">首页</a></li>
+		<li><a href="">客服</a></li>
+	</ul>
+</header>
+<div id="container">
+<fieldset>
+<legend>注册</legend>
+<form action="" name="form1">
+	<table>
+		<tr>
+			<td>登录昵称<span><i>*</i></span>：</td>
+			<td><input type="text" placeholder="你的昵称" required="required"></td>
+		</tr>
+		<tr>
+			<td>登录密码<span><i>*</i></span>：</td>
+			<td><input type="password" required="required" id="password"></td>
+		</tr>
+		<tr>
+			<td>真实姓名<span><i>*</i></span>：</td>
+			<td><input type="text" placeholder="例如：王明" required="required">(只能输入汉字)</td>
+		</tr>
+		<tr>
+			<td>真实年龄<span><i>*</i></span>：</td>
+			<td><input type="text" placeholder="24" required="required"></td>
+		</tr>
+		<tr>
+			<td>性 别<span><i></i></span>：</td>
+			<td><input type="radio"	value="男" name="sex">男 <input type="radio" value="女" name="sex">女</td>
+		</tr>
+		<tr>
+			<td>出生日期<span><i>*</i></span>：</td>
+			<td><input type="date" placeholder="年/月/日" required="required"></td>
+		</tr>
+		<tr>
+			<td>电子邮箱<span><i>*</i></span>：</td>
+			<td><input type="email" placeholder="123456@126.com" required="required"></td>
+		</tr>
+		<tr>
+			<td>身份证号<span><i>*</i></span>：</td>
+			<td><input type="text" id="idcard" required="required">(只接受以数字、字母x结尾的短身份证号)</td>
+		</tr>
+		<tr>
+			<td>手机号码<span><i>*</i></span>：</td>
+			<td><input type="text" required="required"></td>
+		</tr>
+		<tr>
+			<td>省<span><i>*</i></span>：</td>
+			<td><select required="required"></select></td>
+		</tr>
+		<tr>
+			<td>市<span><i>*</i></span>：</td>
+			<td><select required="required"></select></td>
+		</tr>
+		<tr>
+			<td>爱 好<span><i></i></span>：</td>
+			<td><input type="checkbox"	value="动漫" name="hobby[]">动漫<input type="checkbox"	value="电影" name="hobby[]">电影<input type="checkbox"	value="运动" name="hobby[]">运动</td>
+		</tr>
+	</table>
+	<input type="submit" value="注 册" id="left">
+	<input type="reset" value="重 置" id="right">
+	</form>
+	</fieldset>
+	</div>
+</body>
+</html>
