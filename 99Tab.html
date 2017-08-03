@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+	var n=1;
+	var mark=0;
+		function show(){
+			if(n<=45&&mark==0){
+			document.getElementById("No"+n).style.display="";
+			n++;
+			if(n==46) mark=1;
+			setTimeout("show()",500);
+		}
+			else{
+			--n;
+			document.getElementById("No"+n).style.display="none";
+			if(n==1) mark=0;
+			setTimeout("show()",500);
+			}
+		}
+		function add(){
+		var id=0;
+		var tab = document.createElement("table");
+		tab.style.borderCollapse="collapse";
+		document.body.appendChild(tab);
+			for(var i=1;i<=9;i++){
+				var tr = document.createElement("tr");
+				for(var j=1;j<=i;j++){
+					++id;
+					var td = document.createElement("td");
+					td.style.border="1px solid black";
+					td.style.display="none";
+					td.style.width="70px";
+					td.style.textAlign="center"
+					td.id="No"+id;
+					var s = i*j;
+					var td_text = document.createTextNode(i+"*"+j+"="+s);
+					td.appendChild(td_text);
+					tr.appendChild(td);
+					tab.appendChild(tr);
+				}
+			}
+		setTimeout("show()",500);
+		}
+		window.onload=add;
+	</script>
+</head>
+<body>
+
+</body>
+</html>
